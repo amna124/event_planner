@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Event Planner</h1>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required />
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        required
+      />
+      <button type="submit">Login</button>
+    </form>
+
+    <h2>Event Management</h2>
+    <form id="eventForm" style="display: none">
+      <input type="text" id="eventName" placeholder="Event Name" required />
+      <input type="date" id="eventDate" required />
+      <select id="eventCategory">
+        <option value="Meeting">Meeting</option>
+        <option value="Birthday">Birthday</option>
+        <option value="Appointment">Appointment</option>
+      </select>
+      <button type="submit">Add Event</button>
+    </form>
+
+    <h2>Upcoming Events</h2>
+    <ul id="eventList"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
